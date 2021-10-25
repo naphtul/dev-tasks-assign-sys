@@ -1,0 +1,94 @@
+POST http://localhost:8000/dev_tasks/developer/data/create
+Content-Type: application/json
+
+{
+        "MainBranch": "I am a developer by profession",
+        "Employment": "Independent contractor, freelancer, or self-employed",
+        "Country": "Slovakia",
+        "US_State": "NA",
+        "UK_Country": "NA",
+        "EdLevel": "Secondary school (e.g. American high school, German Realschule or Gymnasium, etc.)",
+        "Age1stCode": "18 - 24 years",
+        "LearnCode": "Coding Bootcamp;Other online resources (ex: videos, blogs, etc)",
+        "YearsCode": "NA",
+        "YearsCodePro": "NA",
+        "DevType": "Developer, mobile",
+        "OrgSize": "20 to 99 employees",
+        "Currency": "EUR European Euro",
+        "CompTotal": "4800",
+        "CompFreq": "Monthly",
+        "LanguageHaveWorkedWith": "C++;HTML/CSS;JavaScript;Objective-C;PHP;Swift",
+        "LanguageWantToWorkWith": "Swift",
+        "DatabaseHaveWorkedWith": "PostgreSQL;SQLite",
+        "DatabaseWantToWorkWith": "SQLite",
+        "PlatformHaveWorkedWith": "NA",
+        "PlatformWantToWorkWith": "NA",
+        "WebframeHaveWorkedWith": "Laravel;Symfony",
+        "WebframeWantToWorkWith": "NA",
+        "MiscTechHaveWorkedWith": "NA",
+        "MiscTechWantToWorkWith": "NA",
+        "ToolsTechHaveWorkedWith": "NA",
+        "ToolsTechWantToWorkWith": "NA",
+        "NEWCollabToolsHaveWorkedWith": "PHPStorm;Xcode",
+        "NEWCollabToolsWantToWorkWith": "Atom;Xcode",
+        "OpSys": "MacOS",
+        "NEWStuck": "Call a coworker or friend;Visit Stack Overflow;Go for a walk or other physical activity;Google it",
+        "NEWSOSites": "Stack Overflow",
+        "SOVisitFreq": "Multiple times per day",
+        "SOAccount": "Yes",
+        "SOPartFreq": "A few times per month or weekly",
+        "SOComm": "Yes, definitely",
+        "NEWOtherComms": "No",
+        "Age": "25-34 years old",
+        "Gender": "Man",
+        "Trans": "No",
+        "Sexuality": "Straight / Heterosexual",
+        "Ethnicity": "White or of European descent",
+        "Accessibility": "None of the above",
+        "MentalHealth": "None of the above",
+        "SurveyLength": "Appropriate in length",
+        "SurveyEase": "Easy",
+        "ConvertedCompYearly": "62268"
+}
+
+###
+
+POST http://localhost:8000/dev_tasks/developer/data/delete?id=3
+
+###
+
+GET http://localhost:8000/dev_tasks/developer/data/retrieve?id=1
+
+###
+
+PUT http://localhost:8000/dev_tasks/developer/data/update?id=1&key=SurveyEase&data=Hard
+
+###
+
+POST http://localhost:8000/dev_tasks/tasks/create
+Content-Type: application/json
+
+{
+  "type": "A",
+  "points": 5
+}
+
+###
+
+POST http://localhost:8000/dev_tasks/task/delete?id=1
+
+###
+
+DELETE http://localhost:8000/dev_tasks/task/delete?id=2
+
+###
+
+GET http://localhost:8000/dev_tasks/tasks/view?status=assigned&limit=5
+
+###
+
+
+GET http://localhost:8000/dev_tasks/developer/data/get_teams
+
+###
+
